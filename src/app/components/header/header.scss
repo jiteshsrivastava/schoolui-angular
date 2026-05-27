@@ -1,0 +1,11 @@
+.navbar {
+  .navbar-brand {
+    img { object-fit: contain; }
+  }
+  .nav-link {
+    font-weight: 500;
+    transition: opacity 0.2s;
+    &:hover { opacity: 0.85; }
+    &.active { font-weight: 700; border-bottom: 2px solid rgba(255,255,255,0.8); }
+  }
+}

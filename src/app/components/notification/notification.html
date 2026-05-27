@@ -1,0 +1,32 @@
+<div class="page-header">
+  <div class="container"><h1>Notifications</h1></div>
+</div>
+<div class="container pb-4">
+  <div class="row g-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header card-header-custom">Admission Notice</div>
+        <div class="card-body">
+          <h5 class="card-title text-danger">📢 Admission is going on!</h5>
+          <p class="card-text">Hurry Up, few seats left — please contact @ <strong>7880990888</strong>, <strong>9026279797</strong> to get admission.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header card-header-custom">Co-Curricular Activities</div>
+        <div class="card-body">
+          <p>Throughout the year various activities will be organised by staff. Sometimes specialist mentors will be visiting the school to lead some activities.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let act of activities; let i = index"
+            class="list-group-item"
+            [class.list-group-item-primary]="i % 2 === 0"
+            [class.list-group-item-light]="i % 2 !== 0">
+            ✅ {{ act }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

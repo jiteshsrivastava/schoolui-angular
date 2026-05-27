@@ -1,0 +1,23 @@
+<div id="schoolCarousel" class="carousel slide mb-4 rounded overflow-hidden shadow">
+  <div class="carousel-indicators">
+    <button *ngFor="let img of images; let i = index"
+      type="button"
+      [class.active]="i === currentIndex"
+      (click)="goTo(i)"
+      aria-label="Slide {{i+1}}">
+    </button>
+  </div>
+  <div class="carousel-inner" style="max-height: 420px;">
+    <div *ngFor="let img of images; let i = index"
+      class="carousel-item"
+      [class.active]="i === currentIndex">
+      <img [src]="img.src" [alt]="img.alt" class="d-block w-100" style="object-fit: cover; max-height: 420px;" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" (click)="prev()">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" (click)="next()">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>

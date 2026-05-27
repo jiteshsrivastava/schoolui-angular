@@ -1,0 +1,52 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-color: #1a5276;
+  --secondary-color: #2e86c1;
+  --accent-color: #f39c12;
+  --light-bg: #eaf4fb;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.main-content {
+  min-height: calc(100vh - 130px);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  border-radius: 0 0 8px 8px;
+
+  h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.card-header-custom {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.text-justify {
+  text-align: justify;
+}
